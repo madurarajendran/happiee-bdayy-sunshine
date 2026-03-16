@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ragu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <canvas id="confetti"></canvas>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="main-title">Happy Birthday</h1>
+            <h2 class="name">Ragu ✨</h2>
+            <p class="subtitle">A Special Day For Someone Special</p>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-section">
+            <h3>Next Birthday Countdown</h3>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">0</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">0</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">0</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">0</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Section -->
+        <div class="message-section">
+            <div class="message-card">
+                <h3>Dear Ragu,</h3>
+                <p>
+                    On this special day, I want you to know how much you mean to me. 
+                    Your smile lights up my world, and every moment with you is a blessing.
+                </p>
+                <p>
+                    Thank you for being the most wonderful person in my life. 
+                    Today, and every day, I celebrate YOU!
+                </p>
+                <p class="signature">With all my love,<br><strong>Madura ❤️</strong></p>
+            </div>
+        </div>
+
+        <!-- Wishes Section -->
+        <div class="wishes-section">
+            <h3>Birthday Wishes For You</h3>
+            <div class="wishes-container">
+                <div class="wish-card">
+                    <span class="wish-emoji">🎂</span>
+                    <p>May this year bring you endless joy and happiness!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">💝</span>
+                    <p>You deserve all the love and happiness in the world!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🌟</span>
+                    <p>Here's to another year of amazing adventures together!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🎉</span>
+                    <p>May all your dreams come true this year!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">💎</span>
+                    <p>You're one of a kind, and I'm so lucky to have you!</p>
+                </div>
+                <div class="wish-card">
+                    <span class="wish-emoji">🎊</span>
+                    <p>Celebrating the most special person on the most special day!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Gallery Section -->
+        <div class="gallery-section">
+            <h3>Memories With You</h3>
+            <p class="gallery-note">Add your favorite photos here! Replace the image URLs with your own.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Memory+1" alt="Memory 1">
+                    <p>Our First Meeting 💑</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Memory+2" alt="Memory 2">
+                    <p>Adventures Together 🌍</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Memory+3" alt="Memory 3">
+                    <p>Happy Moments 😊</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Memory+4" alt="Memory 4">
+                    <p>Our Love Story 💕</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Message -->
+        <div class="special-message">
+            <p>"Life was meant for good friends and great adventures." </p>
+            <p>And you're both! Happy Birthday, Ragu! 🎈</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-section">
+            <button class="btn btn-primary" onclick="triggerConfetti()">🎉 Celebrate!</button>
+            <button class="btn btn-secondary" onclick="playMusic()">🎵 Play Music</button>
+        </div>
+    </div>
+
+    <!-- Audio for Birthday Song -->
+    <audio id="birthdayAudio" preload="auto">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
