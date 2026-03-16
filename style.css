@@ -1,0 +1,41 @@
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ffcc00;
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+}
+
+h2 {
+    color: #ff6699;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+}
+
+p {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+}
+
+.button {
+    background-color: #ffcc00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ffb300;
+}
