@@ -1,41 +1,47 @@
 .container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f06, #4a90e2);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  transition: background 0.5s ease;
+}
+
+.container:hover {
+  background: linear-gradient(135deg, #4a90e2, #f06);
 }
 
 h1 {
-    color: #ffcc00;
-    font-family: 'Arial', sans-serif;
-    font-size: 3em;
-}
-
-h2 {
-    color: #ff6699;
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em;
+  font-size: 3rem;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 p {
-    color: #333;
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2em;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  opacity: 0;
+  animation: slideIn 1.5s forwards;
 }
 
-.button {
-    background-color: #ffcc00;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.button:hover {
-    background-color: #ffb300;
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
 }
